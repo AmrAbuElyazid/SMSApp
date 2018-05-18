@@ -1,0 +1,14 @@
+{
+  "name": "MyIonicProject",
+  "app_id": "",
+  "proxies": [
+  	{
+  		"path": "/api",
+  		"proxyUrl": "https://devapi.creativesyard.com/api/auth/login/facebook"
+  	}
+  ],
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

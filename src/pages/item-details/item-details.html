@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle *ngIf="!selectedItem">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{selectedItem.address}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <h3 text-center *ngIf="selectedItem">
+    {{selectedItem.address}}
+    <ion-icon [name]="selectedItem.icon"></ion-icon>
+  </h3>
+  <h4 text-center *ngIf="selectedItem">
+    <b>{{selectedItem.body}}</b>
+  </h4>
+  <button full ion-button color="primary" (click)="sendMessage()">Send Message</button>
+</ion-content>
